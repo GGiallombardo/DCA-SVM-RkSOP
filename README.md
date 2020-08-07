@@ -1,2 +1,4 @@
 # Feature_Selection_SVM
-SVM-based feature selection via k-norm reformulation of sparse optimization and DC programming
+SVM-based feature selection via k-norm reformulation of sparse optimization and DC programming.
+
+See the folder "DataSets" for some well known test-instances in binary classification.
