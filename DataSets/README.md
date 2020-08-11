@@ -1,12 +1,21 @@
 Each dataset is denoted by two digits according to the following:
+
 01 = Breast Cancer
+
 02 = Diabetes
+
 03 = Heart
+
 04 = Ionosphere
+
 05 = Brain_Tumor1
+
 06 = Brain_Tumor2
+
 07 = DLBCL
+
 08 = Leukemia/ALLAML
+
 
 For each dataset XY, the relevant data are grouped in 5 files:
 "XY_dim.txt"
