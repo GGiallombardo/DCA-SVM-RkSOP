@@ -1,27 +1,29 @@
-Each folder contains the following files:
+Each dataset is denoted by two digits according to the following:
+01 = Breast Cancer
+02 = Diabetes
+03 = Heart
+04 = Ionosphere
+05 = Brain_Tumor1
+06 = Brain_Tumor2
+07 = DLBCL
+08 = Leukemia/ALLAML
 
-"dim.txt"
-"bags.txt"
-"aIndx.txt"
-"aJndx.txt"
-"aVal.txt"
-"bagLabels.txt"
-"trainFold.txt"
-"testFold.txt"
+For each dataset XY, the relevant data are grouped in 5 files:
+"XY_dim.txt"
+"XY_Indx.txt"
+"XY_Jndx.txt"
+"XY_aVal.txt"
+"XY_Lab.txt"
 
 Notation:
 n  denote the number of feature (size of the sample space)
-N  denote the number of instances
-A  denote an (n x N) feature-instance matrix
+N  denote the number of point
+A  denote an (n x N) feature-point matrix
 nZ denote the number of nonzero components in A
-nB denote the number of bags
 
 File contents:
+"XY_dim.txt"                  contains (n, N)
+"XY_Lab.txt"                  contains the positive (+1) / negative (0) label of each point
+"XY_Indx.txt", "XY_Jindx.txt" contain the pair i,j of each nonzero component of A
+"XY_aVal.txt"                 contains the nZ nonzero component of A, i.e., for k in (1..nZ): A[aIndx[k]][aJindx[k]] = aVal[k]
 
-"dim.txt"                 contains (n, N, nZ, nB)
-"bags.txt"                contains the assignment instance-to-bag
-"bagLabels.txt"           contains the positive (+1) / negative (-1) label of each bag containing the instance
-"aIndx.txt", "aJindx.txt" contain the pair i,j of each nonzero component of A
-"aVal.txt"                contains the nZ nonzero component of A, i.e., for k in (1..nZ): A[aIndx[k]][aJindx[k]] = aVal[k]
-"trainFold.txt"           contains 10 list of bag index, each containing (0.9 x nB) bag indexes, for the tenfold cross validation training.
-"testFold.txt"            contains 10 list of bag index, each containing (0.1 x nB) bag indexes, for the tenfold cross validation testing.
