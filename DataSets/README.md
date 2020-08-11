@@ -23,18 +23,18 @@ For each dataset XY, the relevant data are grouped in 5 files:
 "XY_aVal.txt"
 "XY_Lab.txt"
 
-Notation:
+NOTATION:
 
-n  denote the number of feature (size of the sample space)
+n  = number of features (size of the sample space)
 
-N  denote the number of point
+N  = number of points
 
-A  denote an (n x N) feature-point matrix
+A  = (n x N) feature-point matrix
 
-nZ denote the number of nonzero components in A
+nZ = number of nonzero components in A
 
 
-File contents:
+FILE CONTENTS
 
 "XY_dim.txt"                  contains (n, N)
 
