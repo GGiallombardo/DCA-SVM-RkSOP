@@ -1,4 +1,4 @@
-# Feature_Selection_SVM
+# The DCA_SVM_kNorm approach
 Sparse optimization for SVM feature selection via vector-k-norm regularization and DC programming.
 
 See the folder "DCA_SVM_kNorm" for the Python implementation of DCA-SVM-RkSOP, a feature selection SVM based on vector-k-norms and DC programming.
