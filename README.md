@@ -1,4 +1,4 @@
-# The DCA_SVM_RkSOP approach
+# The DCA-SVM-RkSOP approach
 Sparse optimization for SVM-based feature-selection via vector-k-norm regularization and DC programming.
 
 An approach presented in:
